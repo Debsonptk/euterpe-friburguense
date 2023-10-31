@@ -13,7 +13,7 @@ interface IHomeCardProps {
   link?: string
 }
 
-const HomeCard: React.FC<IHomeCardProps> = ({
+const IconCard: React.FC<IHomeCardProps> = ({
   icon,
   title,
   description,
@@ -36,4 +36,4 @@ const HomeCard: React.FC<IHomeCardProps> = ({
   )
 }
 
-export default memo(HomeCard)
+export default memo(IconCard)

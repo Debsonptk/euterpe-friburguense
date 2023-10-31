@@ -8,8 +8,10 @@ import { MdSchool } from 'react-icons/md'
 
 import euterpetext from 'assets/euterpetext.png'
 
+import FooterComponent from 'components/FooterComponent'
 import IconCard from 'components/IconCard'
 import Menu from 'components/Menu'
+import Support from 'components/Support'
 
 import useTitle from 'hooks/useTitle'
 
@@ -33,7 +35,7 @@ const Home: React.FC = () => {
           />
         </div>
 
-        <Row className="d-flex row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 pb-3">
+        <Row className="d-flex row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 mb-5">
           <Col>
             <IconCard
               title="História"
@@ -84,6 +86,8 @@ const Home: React.FC = () => {
           </Col>
         </Row>
       </Container>
+      <Support />
+      <FooterComponent />
     </>
   )
 }
