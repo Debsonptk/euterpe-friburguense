@@ -5,6 +5,7 @@ import { BiSolidBook } from 'react-icons/bi'
 import { FaRegCalendarAlt, FaUserFriends } from 'react-icons/fa'
 import { GiFrenchHorn } from 'react-icons/gi'
 import { HiOutlinePhotograph } from 'react-icons/hi'
+import { MdSchool } from 'react-icons/md'
 import { Link } from 'react-router-dom'
 
 import { MenuContainer, MenuOverlay } from './styles'
@@ -47,7 +48,11 @@ const MenuMobile: React.FC<IMenuMobileProps> = ({
           </Link>
           <Link to="/musicos">
             <GiFrenchHorn size={25} />
-            <span className="px-2">Músicos</span>
+            <span className="px-2">A Banda</span>
+          </Link>
+          <Link to="/musicos">
+            <MdSchool size={25} />
+            <span className="px-2">Banda Escola</span>
           </Link>
           <Link to="/fotos">
             <HiOutlinePhotograph size={25} />

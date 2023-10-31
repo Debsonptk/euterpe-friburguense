@@ -1,7 +1,7 @@
 import { memo, useState } from 'react'
 
 import { Container, Row, Col } from 'react-bootstrap'
-import { FaFacebook, FaInstagram, FaYoutube } from 'react-icons/fa'
+import { FaFacebook, FaInstagram } from 'react-icons/fa'
 import { GiHamburgerMenu } from 'react-icons/gi'
 import { Link } from 'react-router-dom'
 
@@ -37,7 +37,12 @@ const Menu: React.FC = () => {
                 </LinkStyle>
                 <LinkStyle>
                   <Link className="navbar-brand px-2" to="/musicos">
-                    Músicos
+                    A Banda
+                  </Link>
+                </LinkStyle>
+                <LinkStyle>
+                  <Link className="navbar-brand px-2" to="/musicos">
+                    Banda Escola
                   </Link>
                 </LinkStyle>
                 <LinkStyle>
@@ -72,13 +77,6 @@ const Menu: React.FC = () => {
               target="_blank"
             >
               <FaFacebook size={25} color="#057444" />
-            </Link>
-            <Link
-              to="https://www.youtube.com/@bandaeuterpefriburguense2272"
-              className="pb-3 px-2"
-              target="_blank"
-            >
-              <FaYoutube size={26} color="#057444" />
             </Link>
           </Col>
           <Col className="d-flex align-items-center justify-content-end d-lg-none">
