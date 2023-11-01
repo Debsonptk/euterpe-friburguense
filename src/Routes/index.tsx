@@ -6,9 +6,9 @@ import BecomeAMember from 'pages/BecomeAMember'
 import Events from 'pages/Events'
 import History from 'pages/History'
 import Home from 'pages/Home'
-import Musicians from 'pages/Musicians'
 import NotFound from 'pages/NotFound'
 import Photos from 'pages/Photos'
+import TheBand from 'pages/TheBand'
 
 const Routes: React.FC = () => {
   return (
@@ -16,7 +16,7 @@ const Routes: React.FC = () => {
       <Switch>
         <Route path="/" element={<Home />} />
         <Route path="/historia" element={<History />} />
-        <Route path="/musicos" element={<Musicians />} />
+        <Route path="/musicos" element={<TheBand />} />
         <Route path="/fotos" element={<Photos />} />
         <Route path="/eventos" element={<Events />} />
         <Route path="/seja-socio" element={<BecomeAMember />} />
