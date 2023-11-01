@@ -69,14 +69,14 @@ const Menu: React.FC = () => {
               className="pb-3 px-2"
               target="_blank"
             >
-              <FaInstagram size={25} color="#057444" />
+              <FaInstagram size={30} color="#057444" />
             </Link>
             <Link
               to="https://www.facebook.com/BandaEuterpeFriburguense"
               className="pb-3 px-2"
               target="_blank"
             >
-              <FaFacebook size={25} color="#057444" />
+              <FaFacebook size={30} color="#057444" />
             </Link>
           </Col>
           <Col className="d-flex align-items-center justify-content-end d-lg-none">

@@ -19,7 +19,7 @@ const Footer: React.FC = () => {
               <div className="d-flex">
                 <FaMapMarkerAlt size={22} color="white" />
                 <p className="text-white px-2">
-                  Av Euterpe Friburguense, 53 Centro Nova Friburgo - RJ
+                  Av Euterpe Friburguense, 53 Centro - Nova Friburgo-RJ
                 </p>
               </div>
               <div className="d-flex">
