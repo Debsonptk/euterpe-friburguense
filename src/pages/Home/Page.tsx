@@ -57,7 +57,7 @@ const Home: React.FC = () => {
               title="Banda Escola"
               description="Conheça o nosso futuro"
               icon={MdSchool}
-              link="/musicos"
+              link="/banda-escola"
             />
           </Col>
           <Col>

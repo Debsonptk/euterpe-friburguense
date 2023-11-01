@@ -33,7 +33,7 @@ const Footer: React.FC = () => {
             </div>
           </Col>
           <Col>
-            <Link to="/musicos">
+            <Link to="/banda-escola">
               <img src={logofooter} alt="logo" className="img-fluid" />
             </Link>
           </Col>

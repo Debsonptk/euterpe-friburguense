@@ -41,7 +41,7 @@ const Menu: React.FC = () => {
                   </Link>
                 </LinkStyle>
                 <LinkStyle>
-                  <Link className="navbar-brand px-2" to="/musicos">
+                  <Link className="navbar-brand px-2" to="/banda-escola">
                     Banda Escola
                   </Link>
                 </LinkStyle>

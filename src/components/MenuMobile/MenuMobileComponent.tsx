@@ -50,7 +50,7 @@ const MenuMobile: React.FC<IMenuMobileProps> = ({
             <GiFrenchHorn size={25} />
             <span className="px-2">A Banda</span>
           </Link>
-          <Link to="/musicos">
+          <Link to="/banda-escola">
             <MdSchool size={25} />
             <span className="px-2">Banda Escola</span>
           </Link>

@@ -8,6 +8,7 @@ import History from 'pages/History'
 import Home from 'pages/Home'
 import NotFound from 'pages/NotFound'
 import Photos from 'pages/Photos'
+import SchoolBand from 'pages/SchoolBand'
 import TheBand from 'pages/TheBand'
 
 const Routes: React.FC = () => {
@@ -17,6 +18,7 @@ const Routes: React.FC = () => {
         <Route path="/" element={<Home />} />
         <Route path="/historia" element={<History />} />
         <Route path="/musicos" element={<TheBand />} />
+        <Route path="/banda-escola" element={<SchoolBand />} />
         <Route path="/fotos" element={<Photos />} />
         <Route path="/eventos" element={<Events />} />
         <Route path="/seja-socio" element={<BecomeAMember />} />
