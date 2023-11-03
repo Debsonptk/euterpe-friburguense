@@ -2,6 +2,8 @@ import { memo, useEffect } from 'react'
 
 import { Container } from 'react-bootstrap'
 
+import fotorecentes from 'assets/fotosrecentes.png'
+
 import Menu from 'components/Menu'
 
 import useTitle from 'hooks/useTitle'
@@ -18,7 +20,11 @@ const Photos: React.FC = () => {
     <>
       <Menu />
       <Container>
-        <h1 className="text-center pt-3">Fotos</h1>
+        <section>
+          <div className="pt-4 pb-4 d-flex justify-content-center">
+            <img src={fotorecentes} alt="Fotos Atuais" className="img-fluid" />
+          </div>
+        </section>
       </Container>
     </>
   )
