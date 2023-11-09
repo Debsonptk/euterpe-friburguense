@@ -238,19 +238,25 @@ const History: React.FC = () => {
               </p>
             </Col>
             <Col>
-              <div className="pb-4 d-flex justify-content-center">
-                <img
-                  src={samuel}
-                  alt="Samuel Antonio dos Santos"
-                  className="img-fluid"
-                />
+              <div className="pb-4 text-center">
+                <div className="d-flex justify-content-center">
+                  <img
+                    src={samuel}
+                    alt="Samuel Antonio dos Santos"
+                    className="img-fluid"
+                  />
+                </div>
+                <span className="px-3">Samuel Antônio dos Santos</span>
               </div>
-              <div className="pb-4 d-flex justify-content-end">
-                <img
-                  src={capela}
-                  alt="Capela Sto Antonio"
-                  className="img-fluid"
-                />
+              <div className="pb-4 text-center">
+                <div className="d-flex justify-content-end">
+                  <img
+                    src={capela}
+                    alt="Capela Sto Antonio"
+                    className="img-fluid"
+                  />
+                </div>
+                <span>Capela de Santo Antônio</span>
               </div>
             </Col>
           </Row>
