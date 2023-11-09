@@ -71,7 +71,7 @@ const TheBand: React.FC = () => {
                 Família.
               </p>
             </Col>
-            <Col>
+            <Col className="text-center">
               <div className="d-flex justify-content-center">
                 <ImageSize
                   src={maestro}
@@ -79,6 +79,7 @@ const TheBand: React.FC = () => {
                   className="img-fluid"
                 />
               </div>
+              <span>Maestro Nelson José da Silva Neto</span>
             </Col>
           </Row>
         </section>

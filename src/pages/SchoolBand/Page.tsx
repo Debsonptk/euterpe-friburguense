@@ -64,10 +64,11 @@ const SchoolBand: React.FC = () => {
               </div>
             </div>
           </Col>
-          <Col>
+          <Col className="text-center">
             <div className="d-flex justify-content-center">
               <img src={sede} alt="Logo" className="img-fluid" />
             </div>
+            <span>Fachada da sede da Banda Euterpe Friburguense</span>
           </Col>
         </Row>
         <section>
