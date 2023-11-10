@@ -6,14 +6,28 @@ import { GiBookCover, GiFrenchHorn } from 'react-icons/gi'
 import { HiOutlinePhotograph } from 'react-icons/hi'
 import { MdSchool } from 'react-icons/md'
 
+import banner1 from 'assets/banner1.png'
+import banner2 from 'assets/banner2.png'
 import euterpetext from 'assets/euterpetext.png'
 
+import Carousel from 'components/Carousel'
 import FooterComponent from 'components/FooterComponent'
 import IconCard from 'components/IconCard'
 import Menu from 'components/Menu'
 import Support from 'components/Support'
 
 import useTitle from 'hooks/useTitle'
+
+const carouselItems = [
+  {
+    image: banner1,
+    subTitle: 'Teatro João Caetano',
+  },
+  {
+    image: banner2,
+    subTitle: 'Ensaio',
+  },
+]
 
 const Home: React.FC = () => {
   const setTitle = useTitle()
@@ -26,6 +40,7 @@ const Home: React.FC = () => {
   return (
     <>
       <Menu />
+      <Carousel items={carouselItems} />
       <Container>
         <div className="d-flex justify-content-center">
           <img
