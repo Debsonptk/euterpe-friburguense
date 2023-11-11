@@ -246,7 +246,9 @@ const History: React.FC = () => {
                     className="img-fluid"
                   />
                 </div>
-                <span className="px-3">Samuel Antônio dos Santos</span>
+                <span className="px-3">
+                  Samuel Antônio dos Santos (1831-1905)
+                </span>
               </div>
               <div className="pb-4 text-center">
                 <div className="d-flex justify-content-end">
@@ -256,7 +258,7 @@ const History: React.FC = () => {
                     className="img-fluid"
                   />
                 </div>
-                <span>Capela de Santo Antônio</span>
+                <span>Capela de Santo Antônio (1884)</span>
               </div>
             </Col>
           </Row>

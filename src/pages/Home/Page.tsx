@@ -64,7 +64,7 @@ const Home: React.FC = () => {
               title="A Banda"
               description="Conheça a banda e seus músicos"
               icon={GiFrenchHorn}
-              link="/musicos"
+              link="/a-banda"
             />
           </Col>
           <Col>

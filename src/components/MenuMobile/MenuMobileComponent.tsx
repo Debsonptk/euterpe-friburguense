@@ -46,7 +46,7 @@ const MenuMobile: React.FC<IMenuMobileProps> = ({
             <BiSolidBook size={20} />
             <span className="px-2">História</span>
           </Link>
-          <Link to="/musicos">
+          <Link to="/a-banda">
             <GiFrenchHorn size={25} />
             <span className="px-2">A Banda</span>
           </Link>

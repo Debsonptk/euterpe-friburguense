@@ -17,7 +17,7 @@ const Routes: React.FC = () => {
       <Switch>
         <Route path="/" element={<Home />} />
         <Route path="/historia" element={<History />} />
-        <Route path="/musicos" element={<TheBand />} />
+        <Route path="/a-banda" element={<TheBand />} />
         <Route path="/banda-escola" element={<SchoolBand />} />
         <Route path="/fotos" element={<Photos />} />
         <Route path="/eventos" element={<Events />} />
