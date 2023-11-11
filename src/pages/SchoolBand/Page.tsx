@@ -4,6 +4,7 @@ import { Col, Container, Row } from 'react-bootstrap'
 import { FaMapMarkerAlt, FaPhone } from 'react-icons/fa'
 import { HiOutlineMailOpen } from 'react-icons/hi'
 
+import bandaescola from 'assets/bandaescola.png'
 import escola from 'assets/bandaescolatitle.png'
 import francisco from 'assets/francisco.png'
 import gilberto from 'assets/gilberto.png'
@@ -13,7 +14,6 @@ import marcos from 'assets/marcos.png'
 import nelson from 'assets/nelson.png'
 import professores from 'assets/professores.png'
 import ruana from 'assets/ruana.png'
-import sede from 'assets/sede.png'
 
 import FooterComponent from 'components/FooterComponent'
 import Menu from 'components/Menu'
@@ -36,7 +36,12 @@ const SchoolBand: React.FC = () => {
         <div className="pt-4 pb-5 d-flex justify-content-center">
           <img src={escola} alt="Banda Escola" className="img-fluid" />
         </div>
-        <Row className="d-flex row-cols-1 row-cols-md-2 pb-5">
+        <Row className="d-flex row-cols-1 row-cols-lg-2 pb-5">
+          <Col className="text-center">
+            <div className="d-flex justify-content-center pb-2 px-5">
+              <img src={bandaescola} alt="Logo" className="img-fluid" />
+            </div>
+          </Col>
           <Col>
             <p className="pb-5 fs-4">
               A Banda Escola, que recebe o nome de seu fundador Samuel Antônio
@@ -63,12 +68,6 @@ const SchoolBand: React.FC = () => {
                 <p className="px-2">(22) 2521-1085</p>
               </div>
             </div>
-          </Col>
-          <Col className="text-center">
-            <div className="d-flex justify-content-center">
-              <img src={sede} alt="Logo" className="img-fluid" />
-            </div>
-            <span>Fachada da sede da Banda Euterpe Friburguense</span>
           </Col>
         </Row>
         <section>

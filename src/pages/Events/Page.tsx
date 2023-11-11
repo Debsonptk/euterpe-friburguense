@@ -1,6 +1,8 @@
 import { memo, useEffect } from 'react'
 
-import { Container } from 'react-bootstrap'
+import { Col, Container, Row } from 'react-bootstrap'
+
+import eventos from 'assets/eventos.png'
 
 import Menu from 'components/Menu'
 
@@ -18,7 +20,19 @@ const Home: React.FC = () => {
     <>
       <Menu />
       <Container>
-        <h1 className="text-center pt-3">Euterpe Friburguense</h1>
+        <div className="d-flex justify-content-center pt-4 pb-5">
+          <img src={eventos} alt="Próximos Eventos" className="img-fluid" />
+        </div>
+        <section>
+          <Row>
+            <Col className="d-flex">
+              <h5>Ensaios:</h5>
+              <p className="d-flex align-items-end px-1">
+                Segundas e Quartas 19h30
+              </p>
+            </Col>
+          </Row>
+        </section>
       </Container>
     </>
   )
