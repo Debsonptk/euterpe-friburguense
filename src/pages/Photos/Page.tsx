@@ -1,4 +1,4 @@
-import { memo, useEffect } from 'react'
+import { memo, useEffect, useState } from 'react'
 
 import { Col, Container, Row } from 'react-bootstrap'
 
@@ -65,6 +65,7 @@ const OldPhotos: string[] = [
 
 const Photos: React.FC = () => {
   const setTitle = useTitle()
+  const [isLoading] = useState(false)
 
   useEffect(() => {
     setTitle('Fotos | Euterpe Friburguense')
@@ -75,40 +76,53 @@ const Photos: React.FC = () => {
     <>
       <Menu />
       <Container>
-        <section>
-          <div className="pt-5 pb-2 d-flex justify-content-center">
-            <img src={fotosrecentes} alt="Fotos Atuais" className="img-fluid" />
-          </div>
-          <Row className="d-flex row-cols-1 row-cols-md-2  g-5 pb-4">
-            {RecentPhotos &&
-              RecentPhotos.map((recentPhoto) => (
-                <Col key={recentPhoto} className="d-flex">
-                  <img
-                    src={recentPhoto}
-                    alt={`Foto ${recentPhoto}`}
-                    className="img-fluid"
-                  />
-                </Col>
-              ))}
-          </Row>
-        </section>
-        <section className="pb-5">
-          <div className="pt-5 pb-2 d-flex justify-content-center">
-            <img src={fotosantigas} alt="Fotos Atuais" className="img-fluid" />
-          </div>
-          <Row className="d-flex row-cols-1 row-cols-md-2  g-5">
-            {OldPhotos &&
-              OldPhotos.map((oldPhoto) => (
-                <Col key={oldPhoto} className="d-flex">
-                  <img
-                    src={oldPhoto}
-                    alt={`Foto ${oldPhoto}`}
-                    className="img-fluid"
-                  />
-                </Col>
-              ))}
-          </Row>
-        </section>
+        {isLoading && <p>Loading</p>}
+        {!isLoading && (
+          <>
+            <section>
+              <div className="pt-5 pb-2 d-flex justify-content-center">
+                <img
+                  src={fotosrecentes}
+                  alt="Fotos Atuais"
+                  className="img-fluid"
+                />
+              </div>
+              <Row className="d-flex row-cols-1 row-cols-md-2  g-5 pb-4">
+                {RecentPhotos &&
+                  RecentPhotos.map((recentPhoto) => (
+                    <Col key={recentPhoto} className="d-flex">
+                      <img
+                        src={recentPhoto}
+                        alt={`Foto ${recentPhoto}`}
+                        className="img-fluid"
+                      />
+                    </Col>
+                  ))}
+              </Row>
+            </section>
+            <section className="pb-5">
+              <div className="pt-5 pb-2 d-flex justify-content-center">
+                <img
+                  src={fotosantigas}
+                  alt="Fotos Atuais"
+                  className="img-fluid"
+                />
+              </div>
+              <Row className="d-flex row-cols-1 row-cols-md-2  g-5">
+                {OldPhotos &&
+                  OldPhotos.map((oldPhoto) => (
+                    <Col key={oldPhoto} className="d-flex">
+                      <img
+                        src={oldPhoto}
+                        alt={`Foto ${oldPhoto}`}
+                        className="img-fluid"
+                      />
+                    </Col>
+                  ))}
+              </Row>
+            </section>
+          </>
+        )}
       </Container>
       <FooterComponent />
     </>
