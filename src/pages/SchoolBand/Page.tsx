@@ -38,8 +38,8 @@ const SchoolBand: React.FC = () => {
         </div>
         <Row className="d-flex row-cols-1 row-cols-lg-2 pb-5">
           <Col className="text-center">
-            <div className="d-flex justify-content-center pb-2 px-5">
-              <img src={bandaescola} alt="Logo" className="img-fluid" />
+            <div className="d-flex justify-content-center pb-2">
+              <img src={bandaescola} alt="Logo" className="img-fluid  px-4" />
             </div>
           </Col>
           <Col>
@@ -74,7 +74,7 @@ const SchoolBand: React.FC = () => {
           <div className="d-flex justify-content-center pt-4 pb-4">
             <img src={professores} alt="Professores" className="img-fluid" />
           </div>
-          <Row className="row-cols-1 row-cols-md-2 row-cols-lg-3 d-flex justify-content-center g-5 pb-4">
+          <Row className="row-cols-1 row-cols-md-2 row-cols-lg-3 d-flex justify-content-center g-3 pb-4">
             <Col className="d-flex">
               <TeacherCard
                 cover={nelson}

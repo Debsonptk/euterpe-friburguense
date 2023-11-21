@@ -87,14 +87,14 @@ const Photos: React.FC = () => {
                   className="img-fluid"
                 />
               </div>
-              <Row className="d-flex row-cols-1 row-cols-md-2  g-5 pb-4">
+              <Row className="d-flex row-cols-1 row-cols-md-2  g-3 pb-4">
                 {RecentPhotos &&
                   RecentPhotos.map((recentPhoto) => (
                     <Col key={recentPhoto} className="d-flex">
                       <img
                         src={recentPhoto}
                         alt={`Foto ${recentPhoto}`}
-                        className="img-fluid"
+                        className="img-fluid border rounded-3"
                       />
                     </Col>
                   ))}
@@ -108,14 +108,14 @@ const Photos: React.FC = () => {
                   className="img-fluid"
                 />
               </div>
-              <Row className="d-flex row-cols-1 row-cols-md-2  g-5">
+              <Row className="d-flex row-cols-1 row-cols-md-2  g-3">
                 {OldPhotos &&
                   OldPhotos.map((oldPhoto) => (
                     <Col key={oldPhoto} className="d-flex">
                       <img
                         src={oldPhoto}
                         alt={`Foto ${oldPhoto}`}
-                        className="img-fluid"
+                        className="img-fluid border rounded-3"
                       />
                     </Col>
                   ))}
