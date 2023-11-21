@@ -23,11 +23,13 @@ const Home: React.FC = () => {
         <div className="d-flex justify-content-center pt-4 pb-5">
           <img src={eventos} alt="Próximos Eventos" className="img-fluid" />
         </div>
-        <section>
-          <Row>
-            <Col className="d-flex">
-              <h5>Ensaios:</h5>
-              <p className="d-flex align-items-end px-1">
+        <section className="border-bottom border-top border-3">
+          <Row className="row-cols-1 row-cols-md-2">
+            <Col className="d-flex pt-5">
+              <p className="fs-1">Ensaios:</p>
+            </Col>
+            <Col>
+              <p className="d-flex align-items-end px-1 fs-3 pb-5 pt-5">
                 Segundas e Quartas 19h30
               </p>
             </Col>
