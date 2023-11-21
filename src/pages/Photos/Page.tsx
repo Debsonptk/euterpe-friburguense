@@ -76,8 +76,8 @@ const Photos: React.FC = () => {
     <>
       <Menu />
       <Container>
-        {isLoading && <p>Loading</p>}
-        {!isLoading && (
+        {isLoading && <p className="text-center">Carregando...</p>}
+        {!isLoading && RecentPhotos && OldPhotos && (
           <>
             <section>
               <div className="pt-5 pb-2 d-flex justify-content-center">
