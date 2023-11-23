@@ -11,6 +11,8 @@ import Menu from 'components/Menu'
 
 import useTitle from 'hooks/useTitle'
 
+import { ContainerColor } from './styles'
+
 const Home: React.FC = () => {
   const setTitle = useTitle()
 
@@ -26,32 +28,32 @@ const Home: React.FC = () => {
         <div className="d-flex justify-content-center pt-4 pb-5">
           <img src={eventos} alt="Próximos Eventos" className="img-fluid" />
         </div>
-        <section className="border-bottom border-top border-3">
+        <ContainerColor className="border-bottom border-top border-3">
           <Row className="row-cols-1 row-cols-md-2">
             <Col className="d-flex pt-5">
-              <p className="fs-1">Ensaios:</p>
+              <p className="fs-1 px-5 text-white">Ensaios:</p>
             </Col>
             <Col>
-              <p className="d-flex justify-content-center align-items-end px-1 fs-3 pb-5 pt-5">
+              <p className="d-flex justify-content-center align-items-end px-1 fs-3 pb-5 pt-5 text-white">
                 Segundas e Quartas 19h30
               </p>
             </Col>
           </Row>
-        </section>
+        </ContainerColor>
         <section className="border-bottom  border-3">
           <Row className="row-cols-1 row-cols-md-2">
             <Col className="d-flex pt-5 d-flex align-items-center">
-              <p className="fs-1">Aula Inaugural:</p>
+              <p className="fs-1 px-5">Aula Inaugural:</p>
             </Col>
             <Col className="d-flex justify-content-center">
               <img src={aula} alt="Gorro Encantado" className="img-fluid p-2" />
             </Col>
           </Row>
         </section>
-        <section className="border-bottom  border-3">
+        <ContainerColor className="border-bottom  border-3 mb-5">
           <Row className="row-cols-1 row-cols-md-2">
             <Col className="d-flex pt-5 d-flex align-items-center">
-              <p className="fs-1">Gorro Encantado:</p>
+              <p className="fs-1 text-white px-5">Gorro Encantado:</p>
             </Col>
             <Col className="d-flex justify-content-center">
               <img
@@ -61,7 +63,7 @@ const Home: React.FC = () => {
               />
             </Col>
           </Row>
-        </section>
+        </ContainerColor>
       </Container>
       <FooterComponent />
     </>

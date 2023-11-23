@@ -18,6 +18,8 @@ import Support from 'components/Support'
 
 import useTitle from 'hooks/useTitle'
 
+import { ContainerCard } from './styles'
+
 const carouselItems = [
   {
     image: banner1,
@@ -52,52 +54,64 @@ const Home: React.FC = () => {
 
         <Row className="d-flex row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 mb-5">
           <Col>
-            <IconCard
-              title="História"
-              description="Conheça a história da banda"
-              icon={GiBookCover}
-              link="/historia"
-            />
+            <ContainerCard>
+              <IconCard
+                title="História"
+                description="Conheça a história da banda"
+                icon={GiBookCover}
+                link="/historia"
+              />
+            </ContainerCard>
           </Col>
           <Col>
-            <IconCard
-              title="A Banda"
-              description="Conheça a banda e seus músicos"
-              icon={GiFrenchHorn}
-              link="/a-banda"
-            />
+            <ContainerCard>
+              <IconCard
+                title="A Banda"
+                description="Conheça a banda e seus músicos"
+                icon={GiFrenchHorn}
+                link="/a-banda"
+              />
+            </ContainerCard>
           </Col>
           <Col>
-            <IconCard
-              title="Banda Escola"
-              description="Conheça o nosso futuro"
-              icon={MdSchool}
-              link="/banda-escola"
-            />
+            <ContainerCard>
+              <IconCard
+                title="Banda Escola"
+                description="Conheça o nosso futuro"
+                icon={MdSchool}
+                link="/banda-escola"
+              />
+            </ContainerCard>
           </Col>
           <Col>
-            <IconCard
-              title="Fotos"
-              description="Veja algumas fotos atuais e históricas"
-              icon={HiOutlinePhotograph}
-              link="/fotos"
-            />
+            <ContainerCard>
+              <IconCard
+                title="Fotos"
+                description="Veja algumas fotos atuais e históricas"
+                icon={HiOutlinePhotograph}
+                link="/fotos"
+              />
+            </ContainerCard>
           </Col>
           <Col>
-            <IconCard
-              title="Eventos"
-              description="Confira a data das nossas próximas apresentações"
-              icon={FaRegCalendarAlt}
-              link="/eventos"
-            />
+            <ContainerCard>
+              <IconCard
+                title="Eventos"
+                description="Confira a data das nossas próximas apresentações"
+                icon={FaRegCalendarAlt}
+                link="/eventos"
+              />
+            </ContainerCard>
           </Col>
           <Col>
-            <IconCard
-              title="Seja Sócio"
-              description="Saiba como ser um sócio da Euterpe Friburguense"
-              icon={FaUserFriends}
-              link="/seja-socio"
-            />
+            <ContainerCard>
+              <IconCard
+                title="Seja Sócio"
+                description="Saiba como ser um sócio da Euterpe Friburguense"
+                icon={FaUserFriends}
+                link="/seja-socio"
+              />
+            </ContainerCard>
           </Col>
         </Row>
       </Container>
