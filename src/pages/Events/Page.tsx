@@ -5,6 +5,7 @@ import { Col, Container, Row } from 'react-bootstrap'
 import eventos from 'assets/eventos.png'
 import aula from 'assets/Events/aulaInalgural.png'
 import gorro from 'assets/Events/gorro.png'
+import recital from 'assets/Events/recital.png'
 
 import FooterComponent from 'components/FooterComponent'
 import Menu from 'components/Menu'
@@ -40,7 +41,7 @@ const Home: React.FC = () => {
             </Col>
           </Row>
         </ContainerColor>
-        <section className="border-bottom  border-3">
+        <section className="border-bottom  border-2 border-end border-start">
           <Row className="row-cols-1 row-cols-md-2">
             <Col className="d-flex pt-5 d-flex align-items-center">
               <p className="fs-1 px-5">Aula Inaugural:</p>
@@ -50,7 +51,7 @@ const Home: React.FC = () => {
             </Col>
           </Row>
         </section>
-        <ContainerColor className="border-bottom  border-3 mb-5">
+        <ContainerColor className="border-bottom  border-3">
           <Row className="row-cols-1 row-cols-md-2">
             <Col className="d-flex pt-5 d-flex align-items-center">
               <p className="fs-1 text-white px-5">Gorro Encantado:</p>
@@ -64,6 +65,20 @@ const Home: React.FC = () => {
             </Col>
           </Row>
         </ContainerColor>
+        <section className="border-bottom  border-2 border-end border-start">
+          <Row className="row-cols-1 row-cols-md-2">
+            <Col className="d-flex pt-5 d-flex align-items-center">
+              <p className="fs-1 px-5">Recital:</p>
+            </Col>
+            <Col className="d-flex justify-content-center">
+              <img
+                src={recital}
+                alt="Gorro Encantado"
+                className="img-fluid p-2"
+              />
+            </Col>
+          </Row>
+        </section>
       </Container>
       <FooterComponent />
     </>
