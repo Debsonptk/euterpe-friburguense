@@ -93,7 +93,6 @@ const TheBand: React.FC = () => {
                 title="Flautas:"
                 icon={GiFlute}
                 musician1="Andreza Rodrigues Duarte"
-                musician2="Maria Manuela Defanti"
                 musician3="Paulo Roberto Machado de Araújo"
                 musician4="Gustavo Dutra"
               />
