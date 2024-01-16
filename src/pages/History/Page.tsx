@@ -42,29 +42,32 @@ const History: React.FC = () => {
                 Em 1858, um navio da marinha portuguesa deixou Lisboa com
                 destino a Buenos Aires. Já em alto mar a tripulação foi
                 surpreendida por uma fortíssima tempestade, colocando em risco
-                todos a bordo. Samuel Antonio dos Santos; oficial músico e
-                regente da Banda de Fuzileiros Navais, católico fervoroso,
-                devoto de Santo Antônio rogou então a Deus pela vida de todos;
-                em troca prometia, na primeira cidade em que aportasse, pediria
-                baixa da marinha e fundaria uma banda de música e uma igreja em
-                louvor a Santo Antônio. Ao chegarem ao Rio de Janeiro salvos,
-                Samuel pede desligamento ao comandante do navio. Na capital do
-                Império trabalha como professor e regente até abril de 1862.
+                todos a bordo. <strong>Samuel Antonio dos Santos</strong>;
+                oficial músico e regente da Banda de Fuzileiros Navais, católico
+                fervoroso, devoto de Santo Antônio rogou então a Deus pela vida
+                de todos; em troca prometia, na primeira cidade em que
+                aportasse, pediria baixa da marinha e fundaria uma banda de
+                música e uma igreja em louvor a Santo Antônio. Ao chegarem ao
+                Rio de Janeiro salvos, Samuel pede desligamento ao comandante do
+                navio. Na capital do Império trabalha como professor e regente
+                até abril de 1862.
               </p>
               <p>
                 Na ocasião, por intermédio de amigos, é apresentado ao coronel
                 Galeano das Neves, presidente da Câmara da Vila de Nova
                 Friburgo. Sabendo que o Colégio Freeze precisava de um professor
-                de música, imediatamente apresenta Samuel ao diretor do
-                educandário que o contrata e traz o maestro para Nova Friburgo.
+                de música, imediatamente apresenta <strong>Samuel</strong> ao
+                diretor do educandário que o contrata e traz o maestro para Nova
+                Friburgo.
               </p>
               <p>
-                Em 26 de fevereiro de 1863, Samuel Antônio dos Santos, com
-                pessoas influentes da cidade, funda a Sociedade Musical
-                Beneficente Euterpe Friburguense (homenagem à deusa-musa grega,
-                patrona da música e das artes), tendo o barão de Nova Friburgo
-                como o seu primeiro presidente. Por 22 anos, ou seja, até 1885,
-                além de professor foi também regente desta primeira manifestação
+                Em 26 de fevereiro de 1863,{' '}
+                <strong>Samuel Antônio dos Santos</strong>, com pessoas
+                influentes da cidade, funda a Sociedade Musical Beneficente
+                Euterpe Friburguense (homenagem à deusa-musa grega, patrona da
+                música e das artes), tendo o barão de Nova Friburgo como o seu
+                primeiro presidente. Por 22 anos, ou seja, até 1885, além de
+                professor foi também regente desta primeira manifestação
                 artística e cultural da cidade. A segunda promessa aconteceria
                 em 13 de junho de 1884, com a inauguração da capela de Santo
                 Antônio, no Suspiro, com recursos obtidos pela diretoria da
@@ -72,18 +75,20 @@ const History: React.FC = () => {
               </p>
               <p>
                 Entre os ilustres admiradores da Banda consta o maestro e
-                compositor Heitor Villa-Lobos, que em 1915, visitando Nova
-                Friburgo, assistiu apresentação da Euterpe, aplaudindo com
-                entusiasmo a exibição da banda.
+                compositor <strong>Heitor Villa-Lobos</strong>, que em 1915,
+                visitando Nova Friburgo, assistiu apresentação da Euterpe,
+                aplaudindo com entusiasmo a exibição da banda.
               </p>
               <p>
                 A Euterpe Friburguense sempre esteve presente nos acontecimentos
                 marcantes de Nova Friburgo. No dia 24 de novembro de 1932, com a
                 Banda do Corpo de Fuzileiros, recepcionou a chegada à estação
-                Leopoldina (atual PMNF) do presidente Getulio Vargas e comitiva.
+                Leopoldina (atual PMNF) do presidente{' '}
+                <strong>Getulio Vargas</strong> e comitiva.
               </p>
               <p>
-                Na segunda visita, em 30 de maio de 1943, Getulio Vargas
+                Na segunda visita, em 30 de maio de 1943,{' '}
+                <strong>Getulio Vargas </strong>
                 regressa da inauguração da Exposição de Cordeiro, e na chegada é
                 recepcionado pelo Tiro de Guerra, comandado na época pelo
                 sargento Renato Lopes. Getulio visitou o Colégio Anchieta,
@@ -93,11 +98,11 @@ const History: React.FC = () => {
               </p>
               <p>
                 Outro momento histórico foi o comício de encerramento da
-                campanha vitoriosa de Juscelino Kubitscheck a presidência da
-                república em 1955. A Euterpe foi convidada para abrilhantar o
-                evento. Eleito, Juscelino tornou-se presidente de honra da
-                Euterpe, sócio contribuinte e honorário até falecer em agosto de
-                1976.
+                campanha vitoriosa de <strong>Juscelino Kubitscheck</strong> a
+                presidência da república em 1955. A Euterpe foi convidada para
+                abrilhantar o evento. Eleito, Juscelino tornou-se presidente de
+                honra da Euterpe, sócio contribuinte e honorário até falecer em
+                agosto de 1976.
               </p>
               <p>
                 Em seus 149 anos de glórias, alguns nomes marcaram época na
@@ -140,12 +145,13 @@ const History: React.FC = () => {
               </p>
               <p>
                 Nas administrações alternadas de José Nilson e Francisco de
-                Assis da Silva (Assis), que é o seu atual presidente, a Euterpe
-                passou e passa por uma grande fase. Em reconhecimento foi
-                agraciada, em 2007, pela Alerj com a Medalha Tiradentes, em
-                comemoração a 145 anos de fundação; além do título de Patrimônio
-                Cultural do Rio de Janeiro nº. 001. Além de já ser reconhecida
-                por ser de Utilidade Pública Municipal e Estadual.
+                Assis da Silva (Assis), a Euterpe passou e passa por uma grande
+                fase. Em reconhecimento foi agraciada, em 2007, pela Alerj com a
+                <strong> Medalha Tiradentes</strong>, em comemoração a 145 anos
+                de fundação; além do título de{' '}
+                <strong>Patrimônio Cultural do Rio de Janeiro nº. 001.</strong>{' '}
+                Além de já ser reconhecida por ser de Utilidade Pública
+                Municipal e Estadual.
               </p>
             </Col>
             <Col className="pb-5">
@@ -246,9 +252,9 @@ const History: React.FC = () => {
                     className="img-fluid"
                   />
                 </div>
-                <span className="px-3">
+                <strong className="px-3">
                   Samuel Antônio dos Santos (1831-1905)
-                </span>
+                </strong>
               </div>
               <div className="pb-4 text-center">
                 <div className="d-flex justify-content-end">
@@ -258,7 +264,7 @@ const History: React.FC = () => {
                     className="img-fluid"
                   />
                 </div>
-                <span>Capela de Santo Antônio (1884)</span>
+                <strong>Capela de Santo Antônio (1884)</strong>
               </div>
             </Col>
           </Row>

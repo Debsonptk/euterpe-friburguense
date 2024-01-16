@@ -39,7 +39,8 @@ const TheBand: React.FC = () => {
           <img src={abanda} alt="A Banda" className="img-fluid" />
         </div>
         <p className="fs-5">
-          Conhecida como a &ldquo;Centenária das Centenárias&rdquo;, a Banda
+          Conhecida como a{' '}
+          <strong>&ldquo;Centenária das Centenárias&rdquo;</strong>, a Banda
           Euterpe Friburguense mantém em seu quadro de músicos, na maioria,
           ex-alunos da sua Banda Escola. A Euterpe é composta por músicos
           amadores, que conciliam suas atividades do dia-a-dia aos ensaios da
@@ -57,18 +58,18 @@ const TheBand: React.FC = () => {
               <p>
                 Sua paixão pela Música e pela Euterpe Friburguense já dura mais
                 de 30 anos. Formado pela Universidade Federal do Rio de Janeiro,
-                com especialização em Trompa, o Maestro Nelson José da Silva
-                Neto iniciou os seus estudos musicais com o professor Rubens
-                Coelho na Banda Escola da Euterpe Friburguense. O Maestro vem,
-                ao logo de mais de 15 anos a frente da instituição, promovendo
-                uma grande integração entre os músicos da Banda Euterpe com
-                músicos profissionais de todo o Brasil. Isso vem a cada dia
-                tornando as apresentações da Instituição mais profissionais e
-                estimulando os seus músicos a seguirem na carreira Musical.
-                Hoje, as sementes da Banda Euterpe fazem parte de bandas
-                militares e orquestras espalhadas por todo o Brasil. Para o
-                nosso Maestro, a Euterpe não é apenas uma Banda de Música, é uma
-                Família.
+                com especialização em Trompa, o{' '}
+                <strong>Maestro Nelson José da Silva Neto</strong> iniciou os
+                seus estudos musicais com o professor Rubens Coelho na Banda
+                Escola da Euterpe Friburguense. O Maestro vem, ao logo de mais
+                de 15 anos a frente da instituição, promovendo uma grande
+                integração entre os músicos da Banda Euterpe com músicos
+                profissionais de todo o Brasil. Isso vem a cada dia tornando as
+                apresentações da Instituição mais profissionais e estimulando os
+                seus músicos a seguirem na carreira Musical. Hoje, as sementes
+                da Banda Euterpe fazem parte de bandas militares e orquestras
+                espalhadas por todo o Brasil. Para o nosso Maestro, a Euterpe
+                não é apenas uma Banda de Música, é uma Família.
               </p>
             </Col>
             <Col className="text-center">
@@ -79,7 +80,7 @@ const TheBand: React.FC = () => {
                   className="img-fluid"
                 />
               </div>
-              <span>Maestro Nelson José da Silva Neto</span>
+              <strong>Maestro Nelson José da Silva Neto</strong>
             </Col>
           </Row>
         </section>
