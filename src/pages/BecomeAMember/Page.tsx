@@ -48,16 +48,18 @@ const BecomeAMember: React.FC = () => {
                 suplementos para a secretaria, etc.
               </p>
               <p>
-                Seja sócio e faça parte da grande família Euterpe. Venha nos
-                visitar em nossa sede localizada na avenida Euterpe
-                Friburguense, nº 53, aberta das 14h às 18h, ou entre em contato
-                pelo telefone (22) 2521-1085.
+                <mark>
+                  Seja sócio e faça parte da grande família Euterpe. Venha nos
+                  visitar em nossa sede localizada na avenida Euterpe
+                  Friburguense, nº 53, aberta das 14h às 18h, ou entre em
+                  contato pelo telefone (22) 2521-1085.
+                </mark>
               </p>
             </Col>
             <Col>
               <img src={sede} alt="Sede" className="img-fluid" />
               <span className="d-flex justify-content-end">
-                Fachada reformada em Julho de 2019
+                <strong>Fachada reformada em Julho de 2019</strong>
               </span>
             </Col>
           </Row>

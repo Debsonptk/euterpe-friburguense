@@ -352,8 +352,12 @@ const History: React.FC = () => {
             />
           </div>
           <div>
-            <span>Número do projeto: PL3342/10 </span>
-            <p>Data de apresentação: Nov 2010</p>
+            <span>
+              <mark>Número do projeto: PL3342/10</mark>{' '}
+            </span>
+            <p>
+              <mark>Data de apresentação: Nov 2010</mark>
+            </p>
             <p>
               A ASSEMBLÉIA LEGISLATIVA DO ESTADO DO RIO DE JANEIRO RESOLVE: Art.
               1º - Fica declarada de Utilidade Pública a “SOCIEDADE MUSICAL
