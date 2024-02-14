@@ -2,6 +2,7 @@ import { memo, useEffect, useState } from 'react'
 
 import { Col, Container, Row } from 'react-bootstrap'
 
+import anchieta2024 from 'assets/160anos.jpeg'
 import fotosantigas from 'assets/fotosantigas.png'
 import fotosrecentes from 'assets/fotosrecentes.png'
 import fa1 from 'assets/OldPhotos/fa1.png'
@@ -35,6 +36,7 @@ import Menu from 'components/Menu'
 import useTitle from 'hooks/useTitle'
 
 const RecentPhotos: string[] = [
+  anchieta2024,
   fr1,
   fr2,
   fr3,
