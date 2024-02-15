@@ -9,14 +9,30 @@ import logo from 'assets/logomenu.png'
 
 import MenuMobile from 'components/MenuMobile'
 
-import { BgMenu, LinkStyle, SizeLogo } from './styles'
+import { BgMenu, LinkStyle, SizeLogo, StyledIcon } from './styles'
 
 const Menu: React.FC = () => {
   const [menuIsVisible, setMenuIsVisible] = useState(false)
   return (
     <BgMenu>
       <Container>
-        <Row>
+        <Row className="align-items-lg-end align-items-start">
+          <Col className="d-flex d-lg-none mb-3">
+            <div>
+              <MenuMobile
+                menuIsVisible={menuIsVisible}
+                setMenuIsVisible={setMenuIsVisible}
+              />
+            </div>
+            <div className="d-flex justify-content-end">
+              <GiHamburgerMenu
+                size={30}
+                color="#057444"
+                type="button"
+                onClick={() => setMenuIsVisible(true)}
+              />
+            </div>
+          </Col>
           <Col>
             <Link to="/" className="pt-3">
               <SizeLogo src={logo} alt="logo" className="img-fluid" />
@@ -63,35 +79,21 @@ const Menu: React.FC = () => {
               </div>
             </nav>
           </Col>
-          <Col className="d-flex align-items-end justify-content-end d-none d-lg-flex">
-            <Link
+          <Col className="d-flex align-items-end justify-content-end pb-3">
+            <StyledIcon
               to="https://www.instagram.com/bandaeuterpefriburguense1863/"
-              className="pb-3 px-2"
+              className="px-2"
               target="_blank"
             >
-              <FaInstagram size={30} color="#057444" />
-            </Link>
-            <Link
+              <FaInstagram className="instagram-icon" color="#057444" />
+            </StyledIcon>
+            <StyledIcon
               to="https://www.facebook.com/BandaEuterpeFriburguense"
-              className="pb-3 px-2"
+              className=""
               target="_blank"
             >
-              <FaFacebook size={30} color="#057444" />
-            </Link>
-          </Col>
-          <Col className="d-flex align-items-center justify-content-end d-lg-none">
-            <div>
-              <MenuMobile
-                menuIsVisible={menuIsVisible}
-                setMenuIsVisible={setMenuIsVisible}
-              />
-              <GiHamburgerMenu
-                size={30}
-                color="#057444"
-                type="button"
-                onClick={() => setMenuIsVisible(true)}
-              />{' '}
-            </div>
+              <FaFacebook className="instagram-icon" color="#057444" />
+            </StyledIcon>
           </Col>
         </Row>
       </Container>

@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 
 export const BgMenu = styled.div`
@@ -17,5 +18,16 @@ export const LinkStyle = styled.div`
   &:hover {
     text-decoration: underline;
     transform: scale(1.1);
+  }
+`
+export const StyledIcon = styled(Link)`
+  .instagram-icon {
+    font-size: 30px; /* Tamanho padrão */
+  }
+
+  @media (max-width: 768px) {
+    .instagram-icon {
+      font-size: 20px; /* Tamanho para telas pequenas (ajuste conforme necessário) */
+    }
   }
 `
