@@ -14,7 +14,9 @@ const SupportComponent: React.FC = () => {
     <div>
       <Container>
         <div className="d-flex justify-content-center align-items-center">
-          <h2 className="fs-1">Apoio:</h2>
+          <h2 className="fs-1">
+            <strong>Apoio:</strong>
+          </h2>
         </div>
         <Row className="d-flex row-cols-1 row-cols-md-3  align-items-center">
           <Link to="https://www.pmnf.rj.gov.br/site/" target="_blank">
