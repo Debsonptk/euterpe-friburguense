@@ -6,3 +6,6 @@ export const TextColor = styled.h2`
 export const ImageSize = styled.img`
   height: 250px;
 `
+export const ContentBand = styled.div`
+  padding-top: 125px;
+`

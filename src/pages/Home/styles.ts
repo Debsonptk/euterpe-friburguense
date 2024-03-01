@@ -6,3 +6,6 @@ export const ContainerCard = styled.div`
     transform: translateY(-10px);
   }
 `
+export const ContentHome = styled.div`
+  padding-top: 100px;
+`

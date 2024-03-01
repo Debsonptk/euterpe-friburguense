@@ -18,7 +18,7 @@ import Support from 'components/Support'
 
 import useTitle from 'hooks/useTitle'
 
-import { ContainerCard } from './styles'
+import { ContainerCard, ContentHome } from './styles'
 
 const carouselItems = [
   {
@@ -42,81 +42,83 @@ const Home: React.FC = () => {
   return (
     <>
       <Menu />
-      <Carousel items={carouselItems} />
-      <Container>
-        <div className="d-flex justify-content-center">
-          <img
-            src={euterpetext}
-            alt="Euterpe Friburguense"
-            className="img-fluid pt-4 pb-4"
-          />
-        </div>
+      <ContentHome>
+        <Carousel items={carouselItems} />
+        <Container>
+          <div className="d-flex justify-content-center">
+            <img
+              src={euterpetext}
+              alt="Euterpe Friburguense"
+              className="img-fluid pt-4 pb-4"
+            />
+          </div>
 
-        <Row className="d-flex row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 mb-5">
-          <Col>
-            <ContainerCard>
-              <IconCard
-                title="História"
-                description="Conheça a história da banda"
-                icon={GiBookCover}
-                link="/historia"
-              />
-            </ContainerCard>
-          </Col>
-          <Col>
-            <ContainerCard>
-              <IconCard
-                title="A Banda"
-                description="Conheça a banda e seus músicos"
-                icon={GiFrenchHorn}
-                link="/a-banda"
-              />
-            </ContainerCard>
-          </Col>
-          <Col>
-            <ContainerCard>
-              <IconCard
-                title="Banda Escola"
-                description="Conheça o nosso futuro"
-                icon={MdSchool}
-                link="/banda-escola"
-              />
-            </ContainerCard>
-          </Col>
-          <Col>
-            <ContainerCard>
-              <IconCard
-                title="Fotos"
-                description="Veja algumas fotos atuais e históricas"
-                icon={HiOutlinePhotograph}
-                link="/fotos"
-              />
-            </ContainerCard>
-          </Col>
-          <Col>
-            <ContainerCard>
-              <IconCard
-                title="Eventos"
-                description="Confira a data das nossas próximas apresentações"
-                icon={FaRegCalendarAlt}
-                link="/eventos"
-              />
-            </ContainerCard>
-          </Col>
-          <Col>
-            <ContainerCard>
-              <IconCard
-                title="Seja Sócio"
-                description="Saiba como ser um sócio da Euterpe Friburguense"
-                icon={FaUserFriends}
-                link="/seja-socio"
-              />
-            </ContainerCard>
-          </Col>
-        </Row>
-      </Container>
-      <Support />
-      <FooterComponent />
+          <Row className="d-flex row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 mb-5">
+            <Col>
+              <ContainerCard>
+                <IconCard
+                  title="História"
+                  description="Conheça a história da banda"
+                  icon={GiBookCover}
+                  link="/historia"
+                />
+              </ContainerCard>
+            </Col>
+            <Col>
+              <ContainerCard>
+                <IconCard
+                  title="A Banda"
+                  description="Conheça a banda e seus músicos"
+                  icon={GiFrenchHorn}
+                  link="/a-banda"
+                />
+              </ContainerCard>
+            </Col>
+            <Col>
+              <ContainerCard>
+                <IconCard
+                  title="Banda Escola"
+                  description="Conheça o nosso futuro"
+                  icon={MdSchool}
+                  link="/banda-escola"
+                />
+              </ContainerCard>
+            </Col>
+            <Col>
+              <ContainerCard>
+                <IconCard
+                  title="Fotos"
+                  description="Veja algumas fotos atuais e históricas"
+                  icon={HiOutlinePhotograph}
+                  link="/fotos"
+                />
+              </ContainerCard>
+            </Col>
+            <Col>
+              <ContainerCard>
+                <IconCard
+                  title="Eventos"
+                  description="Confira a data das nossas próximas apresentações"
+                  icon={FaRegCalendarAlt}
+                  link="/eventos"
+                />
+              </ContainerCard>
+            </Col>
+            <Col>
+              <ContainerCard>
+                <IconCard
+                  title="Seja Sócio"
+                  description="Saiba como ser um sócio da Euterpe Friburguense"
+                  icon={FaUserFriends}
+                  link="/seja-socio"
+                />
+              </ContainerCard>
+            </Col>
+          </Row>
+        </Container>
+        <Support />
+        <FooterComponent />
+      </ContentHome>
     </>
   )
 }

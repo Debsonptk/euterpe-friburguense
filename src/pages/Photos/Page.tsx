@@ -35,6 +35,8 @@ import Menu from 'components/Menu'
 
 import useTitle from 'hooks/useTitle'
 
+import { ContentPhotos } from './styles'
+
 const RecentPhotos: string[] = [
   anchieta2024,
   fr1,
@@ -77,56 +79,58 @@ const Photos: React.FC = () => {
   return (
     <>
       <Menu />
-      <Container>
-        {isLoading && <p className="text-center">Carregando...</p>}
-        {!isLoading && RecentPhotos && OldPhotos && (
-          <>
-            <section>
-              <div className="pt-5 pb-2 d-flex justify-content-center">
-                <img
-                  src={fotosrecentes}
-                  alt="Fotos Atuais"
-                  className="img-fluid"
-                />
-              </div>
-              <Row className="d-flex row-cols-1 row-cols-md-2  g-3 pb-4">
-                {RecentPhotos &&
-                  RecentPhotos.map((recentPhoto) => (
-                    <Col key={recentPhoto} className="d-flex">
-                      <img
-                        src={recentPhoto}
-                        alt={`Foto ${recentPhoto}`}
-                        className="img-fluid border rounded-3"
-                      />
-                    </Col>
-                  ))}
-              </Row>
-            </section>
-            <section className="pb-5">
-              <div className="pt-5 pb-2 d-flex justify-content-center">
-                <img
-                  src={fotosantigas}
-                  alt="Fotos Atuais"
-                  className="img-fluid"
-                />
-              </div>
-              <Row className="d-flex row-cols-1 row-cols-md-2  g-3">
-                {OldPhotos &&
-                  OldPhotos.map((oldPhoto) => (
-                    <Col key={oldPhoto} className="d-flex">
-                      <img
-                        src={oldPhoto}
-                        alt={`Foto ${oldPhoto}`}
-                        className="img-fluid border rounded-3"
-                      />
-                    </Col>
-                  ))}
-              </Row>
-            </section>
-          </>
-        )}
-      </Container>
-      <FooterComponent />
+      <ContentPhotos>
+        <Container>
+          {isLoading && <p className="text-center">Carregando...</p>}
+          {!isLoading && RecentPhotos && OldPhotos && (
+            <>
+              <section>
+                <div className="pt-5 pb-2 d-flex justify-content-center">
+                  <img
+                    src={fotosrecentes}
+                    alt="Fotos Atuais"
+                    className="img-fluid"
+                  />
+                </div>
+                <Row className="d-flex row-cols-1 row-cols-md-2  g-3 pb-4">
+                  {RecentPhotos &&
+                    RecentPhotos.map((recentPhoto) => (
+                      <Col key={recentPhoto} className="d-flex">
+                        <img
+                          src={recentPhoto}
+                          alt={`Foto ${recentPhoto}`}
+                          className="img-fluid border rounded-3"
+                        />
+                      </Col>
+                    ))}
+                </Row>
+              </section>
+              <section className="pb-5">
+                <div className="pt-5 pb-2 d-flex justify-content-center">
+                  <img
+                    src={fotosantigas}
+                    alt="Fotos Atuais"
+                    className="img-fluid"
+                  />
+                </div>
+                <Row className="d-flex row-cols-1 row-cols-md-2  g-3">
+                  {OldPhotos &&
+                    OldPhotos.map((oldPhoto) => (
+                      <Col key={oldPhoto} className="d-flex">
+                        <img
+                          src={oldPhoto}
+                          alt={`Foto ${oldPhoto}`}
+                          className="img-fluid border rounded-3"
+                        />
+                      </Col>
+                    ))}
+                </Row>
+              </section>
+            </>
+          )}
+        </Container>
+        <FooterComponent />
+      </ContentPhotos>
     </>
   )
 }
