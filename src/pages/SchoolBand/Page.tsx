@@ -13,7 +13,6 @@ import lucas from 'assets/lucas.png'
 import marcos from 'assets/marcos.png'
 import nelson from 'assets/nelson.png'
 import professores from 'assets/professores.png'
-import ruana from 'assets/ruana.png'
 
 import FooterComponent from 'components/FooterComponent'
 import Menu from 'components/Menu'
@@ -104,13 +103,6 @@ const SchoolBand: React.FC = () => {
               </Col>
               <Col className="d-flex">
                 <TeacherCard
-                  cover={lucas}
-                  name="Lucas Coutinho"
-                  instrument="Trombone & Percussão"
-                />
-              </Col>
-              <Col className="d-flex">
-                <TeacherCard
                   cover={marcos}
                   name="Marcos Antônio"
                   instrument="Clarineta"
@@ -125,16 +117,16 @@ const SchoolBand: React.FC = () => {
               </Col>
               <Col className="d-flex">
                 <TeacherCard
-                  cover={gustavo}
-                  name="Gustavo Dutra"
-                  instrument="Flauta"
+                  cover={lucas}
+                  name="Lucas Coutinho"
+                  instrument="Trombone & Percussão"
                 />
               </Col>
               <Col className="d-flex">
                 <TeacherCard
-                  cover={ruana}
-                  name="Ruana Moraes"
-                  instrument="Casa Madre Roselli"
+                  cover={gustavo}
+                  name="Gustavo Dutra"
+                  instrument="Flauta"
                 />
               </Col>
             </Row>
